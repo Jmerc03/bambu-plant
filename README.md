@@ -57,4 +57,4 @@ Create an entry for each printer you want to display.
 
 ## Launching
 
-In one ternimal run `node ./server/index.js` to launch the mqtt subscribers, and in another ternimal run `yarn` then `yarn dev` to launch the app
+In one ternimal run `node ./server/index.js` to launch the mqtt subscribers, and in another ternimal run `cd app`, `yarn`, and then `yarn dev` to launch the app
