@@ -222,7 +222,7 @@ export default function Home() {
                     {printerArray?.error === "0"
                       ? "OK"
                       : printerArray?.error === "117473284"
-                        ? "Spagetti"
+                        ? "SPAGETTI"
                         : "ERROR CODE: " + printerArray?.error}
                   </p>
                   <div className="time">
