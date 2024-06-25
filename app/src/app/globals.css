@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: #f6f7eb;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.loadingBar {
+  * {
+    background-color: #3f88c5 !important;
+    border-radius: 10px;
+  }
+  background-color: #8caac3 !important;
+  border-radius: 10px;
+}
+
+#hope-PAUSE {
+  * {
+    background-color: #e94f37 !important;
+  }
+  background-color: #e94f37 !important;
+}
+
+#hope-RUNNING {
+  * {
+    background-color: #3f88c5 !important;
+  }
+  background-color: #8caac3 !important;
+}
+
+#hope-FINISH {
+  * {
+    background-color: #44bba4 !important;
+  }
+}
+
+#hope-IDLE {
+  * {
+    background-color: #fea82f !important;
+  }
+  background-color: #ffcb83 !important;
+}
+
+.p-24 {
+  padding: 0;
+}
+
+.box {
+  background-color: #393e41;
+  border-color: #3f88c5;
+  border-radius: 20px;
+  border-width: 10px;
+  padding: 10px;
+}
+
+#main-PAUSE {
+  border-color: #e94f37;
+}
+
+#main-RUNNING {
+  border-color: #3f88c5;
+}
+
+#main-FINISH {
+  border-color: #44bba4;
+}
+
+#main-IDLE {
+  border-color: #fea82f;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  /* background-color: violet; */
+}
+
+.title p {
+  font-size: 25px;
+  font-weight: bold;
+  /* background-color: blue; */
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: fit-content;
+  /* background-color: red; */
+}
