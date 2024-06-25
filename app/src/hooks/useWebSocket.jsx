@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useWebSocket = () => {
   const [socketData, setSocketData] = useState(null);
 
-  const HOST = "192.168.0.174";
+  const HOST = location.hostname;
   const WS_SERVER = `ws://${HOST}:9999/`;
 
   useEffect(() => {
